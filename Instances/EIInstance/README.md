@@ -1,7 +1,7 @@
 Configuring EI Instance
-=======================
+============================
 
-Follow these steps to configure backend instance
+Follow these steps to configure ei instance
 
 ## Prerequisites
 
@@ -31,13 +31,22 @@ Note: Script refer path for JDK as "software/java". Update path to JDK in script
 
 2. Add instance hostname in to /etc/hosts
 
-3. Add following line in to /etc/hosts with respective ip of backend server instance
+3. Add following line in to /etc/hosts with the ip of EI server instance
 
 `192.168.*.* netty`
 
-4. EI pack should be downloaded and update path to pack in script.
+4. Add the following into the ei/wso2ei-6.1.0/bin/integrator.sh under the $JVM_MEM_OPTS \
+      -XX:+PrintGC \
+      -XX:+PrintGCDetails \
+      -XX:+PrintGCDateStamps\
+      -Xloggc:"$CARBON_HOME/repository/logs/gc.log"\
+      
+5. Edit configure_instance.sh product variable with the produt name (wso2ei-6.1.1 or wso2esb-5.0.0)
+   
+6. EI pack should be downloaded and update path to pack in script.
 
 Note: Script refer path as "~/software/"
+      
 
 ## Run Scripts
 
