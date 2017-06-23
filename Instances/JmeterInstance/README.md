@@ -1,7 +1,7 @@
 Configuring Jmeter Instance
 ============================
 
-Follow these steps to configure backend instance
+Follow these steps to configure Jmeter instance
 
 ## Prerequisites
 
@@ -27,13 +27,13 @@ Similarly for Java 8, following are the files required
 
 The Java Demos and Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy files are optional.
 
-Note: Script refer path for JDK as "software/java". Update path to JDK in script.
+Note: This folder contains "jdk-8u131-linux-x64.tar.gz" in "software/java" folder. Please update relevant files accordingly.
 
 2. Add instance hostname in to /etc/hosts
 
 3. Add server key in to a folder (Ex: ~/key) and give permission as "chmod 600 keyFile"
 
-4. Edit config file with respective IPs. Give file path to key file.
+4. Edit config file with respective IPs and hosts. Give file path to key file.
 
 5. Edit run_all script with ip of EI Server
 
@@ -42,6 +42,10 @@ Note: Script refer path for JDK as "software/java". Update path to JDK in script
 7. Jmeter should be downloaded and update path to it in script.
 
 Note: Script refer path as "~/software/"
+
+8. Edit esb-perf-execution.sh file with respective hosts
+
+9. Edit esb-perf-execution.sh product variable as you need (wso2ei-6.1.1, wso2esb-5.0.0)
 
 ## Run Scripts
 
