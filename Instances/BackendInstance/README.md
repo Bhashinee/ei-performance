@@ -27,7 +27,7 @@ Similarly for Java 8, following are the files required
 
 The Java Demos and Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy files are optional.
 
-Note: Script refer path for JDK as "software/java". Update path to JDK in script.
+Note: This folder contains "jdk-8u131-linux-x64.tar.gz" in "software/java" folder. Please update relevant files accordingly.
 
 2. Add instance hostname in to /etc/hosts
 
